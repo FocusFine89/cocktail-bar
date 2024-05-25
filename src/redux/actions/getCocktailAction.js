@@ -8,7 +8,8 @@ export const getCocktailAction = (input) => {
       );
       if (response.ok) {
         let cocktails = await response.json();
-        dispatch({ type: GET_COCKTAIL, payload: cocktails.drinks });
+        cocktails = cocktails.drinks.reverse();
+        dispatch({ type: GET_COCKTAIL, payload: cocktails });
       } else {
         throw new Error("Errore nella fetch");
       }

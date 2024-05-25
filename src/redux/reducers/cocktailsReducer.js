@@ -1,7 +1,9 @@
 import { GET_COCKTAIL } from "../actions/getCocktailAction";
+import { GET_DETAILS } from "../actions/getDetailsAction";
 
 const initialState = {
   content: [],
+  details: null,
 };
 
 const cocktailsReducer = (state = initialState, action) => {
@@ -10,6 +12,11 @@ const cocktailsReducer = (state = initialState, action) => {
       return {
         ...state,
         content: action.payload,
+      };
+    case GET_DETAILS:
+      return {
+        ...state,
+        details: action.payload,
       };
     default:
       return state;

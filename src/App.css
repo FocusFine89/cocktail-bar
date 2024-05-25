@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .logo-navbar {
   width: 100px;
   height: 100px;
@@ -7,3 +11,13 @@
   height: 200px;
   object-fit: cover;
 } */
+
+.input-search {
+  width: 30rem;
+}
+
+@media only screen and (max-width: 430px) {
+  .input-search {
+    width: 75%;
+  }
+}
