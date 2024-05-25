@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function TopBar() {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar bg="light" data-bs-theme="light" className="sticky-top">
         <Container fluid>
           <img src="./n.png" alt="" className="logo-navbar" />
           <Nav className="me-auto">
