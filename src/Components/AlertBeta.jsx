@@ -1,10 +1,8 @@
-import { useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import { useDispatch, useSelector } from "react-redux";
 import { SET_ALERT } from "../redux/reducers";
 
 function AlertBeta() {
-  const [show, setShow] = useState(true);
   const dispatch = useDispatch();
   const showAlert = useSelector((state) => state.alert.content);
 

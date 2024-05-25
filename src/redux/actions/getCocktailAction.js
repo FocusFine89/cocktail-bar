@@ -15,6 +15,7 @@ export const getCocktailAction = (input, filtro) => {
       }
     } catch (err) {
       console.log("errore");
+      alert("Nessun cocktail trovato, inserisci un altro ingrediente");
     }
   };
 };

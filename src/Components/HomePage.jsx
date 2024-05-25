@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Alert, Button, Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import { Card, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getCocktailAction } from "../redux/actions/getCocktailAction";
@@ -31,7 +32,7 @@ const HomePage = () => {
             placeholder="cerca per ingrediente..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            onKeyPress={(e) => keydown(e)}
+            onKeyDown={(e) => keydown(e)}
           />
 
           <Button
