@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 function TopBar() {
   return (
@@ -9,11 +10,13 @@ function TopBar() {
         <Container fluid>
           <img src="./n.png" alt="" className="logo-navbar" />
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features" className="">
-              Favourits
-            </Nav.Link>
-            <Nav.Link href="#pricing">About Me</Nav.Link>
+            <Link to="/" className="mx-4 text-dark  link-nav">
+              Home
+            </Link>
+
+            <Link to="/aboutme" className="text-dark  link-nav">
+              About Me
+            </Link>
           </Nav>
         </Container>
       </Navbar>

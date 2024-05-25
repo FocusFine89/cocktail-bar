@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./Components/HomePage";
 import TopBar from "./Components/TopBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutMe from "./Components/AbouteMe";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <BrowserRouter>
         <TopBar />
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,6 @@
 export const GET_COCKTAIL = "GET_COCKTAIL";
 
-export const getCocktailAction = (input) => {
+export const getCocktailAction = (input, filtro) => {
   return async (dispatch) => {
     try {
       let response = await fetch(

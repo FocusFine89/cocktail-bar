@@ -16,6 +16,14 @@ body {
   width: 30rem;
 }
 
+.link-nav {
+  text-decoration: none;
+}
+
+.aboutme-image {
+  width: 100%;
+}
+
 @media only screen and (max-width: 430px) {
   .input-search {
     width: 75%;
